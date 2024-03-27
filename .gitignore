@@ -1,24 +1,23 @@
 # 依赖项
 node_modules/
 
-# 构建产物
+# 编译输出
 dist/
+.vitepress/dist/
 
-# 环境变量和配置文件
-.env
-.env.local
-.env.production
-.env.development
+# 缓存文件
+.vitepress/cache/
 
-# 编辑器目录和文件
-.vscode/
-.idea/
-*.swp
-*.swo
+# 构建产物映射文件
+*.map
 
-# 操作系统生成的文件
+# 系统相关
 .DS_Store
 Thumbs.db
+
+# 编辑器配置
+.vscode/
+.idea/
 
 # 日志文件
 *.log
@@ -28,9 +27,20 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# VitePress特定文件（如果有）
-.vitepress/dist/
+# 环境变量和配置文件
+.env
+.env.local
+.env.production
+.env.development
 
-# 其他
+# 锁文件
+package-lock.json
+yarn.lock
+
+# 如果你不希望将markdown源文件加入版本控制，取消下面一行的注释
+# docs/**/*.md
+
+# 如果你有特定于项目的其他文件或目录需要忽略，也可以添加到这里
+# 例如，如果你有临时文件或是编译时生成的额外文件
 *.tmp
 *.temp

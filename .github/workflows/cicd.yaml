@@ -34,13 +34,3 @@ jobs:
         source: ".vitepress/dist/**/*"
         target: "/var/www/vitepress/"
         rm: true
-
-    - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@v2.1.5
-      
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SOURCE: ".vitepress/dist/**/*"
-        REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-        REMOTE_USER: ${{ secrets.SERVER_USER }}
-        TARGET: "/var/www/vitepress/"

@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
@@ -34,3 +35,15 @@ jobs:
         source: ".vitepress/dist/"
         target: "/var/www/vitepress/"
         rm: true
+        
+    - name: Adjust Server Directory Structure
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: 22
+        script: |
+          if [ -d "/var/www/vitepress/.vitepress/dist/" ]; then
+            mv /var/www/vitepress/.vitepress/dist/ /var/www/vitepress/dist/
+          fi

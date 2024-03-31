@@ -31,6 +31,6 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
-        source: ".vitepress/dist/**/*"
-        target: "/var/www/vitepress/dist/"
+        source: ".vitepress/dist/"
+        target: "/var/www/vitepress/"
         rm: true

@@ -3,7 +3,7 @@ name: Build and Deploy VitePress Site
 on:
   push:
     branches:
-      - main  # Assuming your primary branch is named main
+      - main
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '21'  # Choose the Node.js version that matches your development environment
+        node-version: '18'  # Use an LTS version of Node.js
 
     - name: Install dependencies
       run: npm install
@@ -27,10 +27,10 @@ jobs:
         host: ${{ secrets.SERVER_HOST }}
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22  # Or any custom port if your SSH server uses one
-        source: "dist/*"
+        port: 22
+        source: "dist/**/*"
         target: "/var/www/vitepress/"
-        rm: true  # Remove the files at the target before copying
+        rm: true
 
     - name: Execute remote commands
       uses: appleboy/ssh-action@master
@@ -41,5 +41,5 @@ jobs:
         port: 22
         script: |
           cd /var/www/vitepress/
-          # Any command you need to execute, for example to restart a service
-          # sudo systemctl restart nginx
+          # Commands to restart the server or application
+          # e.g., sudo systemctl restart nginx

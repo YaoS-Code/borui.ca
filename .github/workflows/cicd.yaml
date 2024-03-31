@@ -20,7 +20,10 @@ jobs:
 
     - name: Build VitePress site
       run: npm run docs:build
-
+      
+    - name: List built files
+      run: ls -al dist/
+    
     - name: Deploy to Server
       uses: appleboy/scp-action@master
       with:

@@ -14,10 +14,13 @@
 
 ### MMC Contact
 
-| Department         |                   Phone                   | Email                  |
-| :----------------- | :---------------------------------------: | ---------------------- |
-| IT (Yao)           | [604-629-8968 ext 601](tel:604-629-8968)  | IT@mmcwellness.ca      |
-| Manager (Eva)      | [604-629-8968 ext 104 ](tel:604-629-8968) | manager@mmcwellness.ca |
-| MOA (Sally/Winnie) | [604-629-8968 ext 201 ](tel:604-629-8968) | info@mmcwellness.ca    |
-| Lulu (Marketing)   | [604-629-8968 ext 601](tel:604-629-8968)  | pr@mmcwellness.ca      |
+| Department         | Phone                                     | Email                             |
+| :----------------- | :---------------------------------------- | :-------------------------------- |
+| IT (Yao)           | [604-629-8968 ext 601](tel:604-629-8968)  | IT@mmcwellness.ca                 |
+| Manager (Eva)      | [604-629-8968 ext 104 ](tel:604-629-8968) | manager@mmcwellness.ca            |
+| MOA (Sally/Winnie) | [604-629-8968 ext 201 ](tel:604-629-8968) | info@mmcwellness.ca               |
+| Lulu (Marketing)   | [604-629-8968 ext 601](tel:604-629-8968)  | pr@mmcwellness.ca                 |
+| Fax                | [604-629-8968 ext 601](tel:604-629-8968)  |                                   |
+
+
 

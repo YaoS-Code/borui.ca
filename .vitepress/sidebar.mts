@@ -1,31 +1,68 @@
 export default {
-    '/borui/singaporeMath/':[{
-        text:'Singapore Math',
+            '/coding/apcsa/':[{
+                text:'APCSA Notes',
+                items:[
+                    {
+                        text:'APCSA Overview',
+                        link:'/coding/apcsa/0_apcsa'
+                    },
+                    {
+                        text:'1. Package',
+                        link:'/coding/apcsa/1_package'
+                    },
+                    {
+                        text:'2. Class',
+                        link:'/coding/apcsa/2_class'
+                    },
+                    {
+                        text:'3. Method',
+                        link:'/coding/apcsa/3_method'
+                    },
+                    {
+                        text:'4. Data Type',
+                        link:'/coding/apcsa/4_datatype'
+                    },
+                ],
+
+            }],
+            '/coding/python/':[{
+                text:'Notebooks',
+                items:[
+                    {
+                        text:'Python Basic',
+                        link:'/coding/python/python'
+                    },
+                    {
+                        text:'Django',
+                        link:'/coding/python/django'
+                    },
+                ],
+
+            }],
+    '/zh/coding/apcsa/':[{
+        text:'APCSA 笔记',
         items:[
             {
-                text:'Grade 1',
-                link:'/borui/singaporeMath/grade1'
+                text:'APCSA 概述及目录',
+                link:'/zh/coding/apcsa/0_apcsa'
             },
             {
-                text:'Grade 2',
-                link:'/borui/singaporeMath/grade2'
+                text:'1. 包',
+                link:'/zh/coding/apcsa/1_package'
             },
             {
-                text:'Grade 3',
-                link:'/borui/singaporeMath/grade3'
+                text:'2. 类',
+                link:'/zh/coding/apcsa/2_class'
             },
             {
-                text:'Grade 4',
-                link:'/borui/singaporeMath/grade4'
+                text:'3. 方法',
+                link:'/zh/coding/apcsa/3_method'
             },
             {
-                text:'Grade 5',
-                link:'/borui/singaporeMath/grade5'
+                text:'4. 数据类型',
+                link:'/zh/coding/apcsa/4_datatype'
             },
-            {
-                text:'Grade 6',
-                link:'/borui/singaporeMath/grade6'
-            },
-        ]
+        ],
+
     }],
 }

@@ -82,12 +82,6 @@ public class HelloWorld {
 
 
 
-### File System
-
-
-![image-20240401103701198](../../public/coding/image-20240401103701198.png)
-
-
 ### Specific Explanation of Classes
 
 * 1 `private`

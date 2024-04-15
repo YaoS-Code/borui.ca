@@ -35,7 +35,7 @@ features:
 #    theme: alt
   - title: AP Computer Science A
     details: Learn programming skills, master the fundamentals of computer science, Goal at 5 for your APCSA.
-    link: /coding/apcsa/0_apcsa
+    link: /zh/coding/apcsa/0_apcsa
     theme: alt
     
 ---

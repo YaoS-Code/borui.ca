@@ -23,7 +23,7 @@ hero:
 features:
   - title: AP Computer Science A
     details: Delve into the International Baccalaureate (IB) Mathematics curriculum, exploring the depth of mathematical concepts.
-    link: /ib
+    link: /coding/apcsa/0_apcsa
     theme: brand
 #  - title: Guass
 #    details: Explore the mysteries of Gaussian mathematics, understanding its significant contributions to the field.
